@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox id="AnchorPane" spacing="5" style="-fx-padding: 10"
+xmlns:fx="http://javafx.com/fxml" 
+      fx:controller="com.moscaville.javafxdemo.MainFXML">
+    <children>
+        <Label text="Address Book" />
+        <TableView fx:id="userstable" >
+            <columns>
+                <TableColumn fx:id="colFirstName" text="First Name" prefWidth="150"/>                
+                <TableColumn fx:id="colLastName" text="Last Name" prefWidth="150"/>
+                <TableColumn fx:id="colEmail" text="Email" prefWidth="250"/>
+            </columns>                                      
+        </TableView>
+        <HBox spacing="3"> 
+            <TextField fx:id="tfFirstName" promptText="First Name"/>
+            <TextField fx:id="tfLastName" promptText="Last Name"/>
+            <TextField fx:id="tfEmail" promptText="Email"/>
+        <Button id="btnAdd" layoutX="126" layoutY="420" text="Add" onAction="#btnAddAction" fx:id="btnAdd" />            
+        </HBox>
+    </children>
+</VBox>
