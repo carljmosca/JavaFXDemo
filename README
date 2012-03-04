@@ -12,9 +12,8 @@ http://java.oracle.com
 
 Next, use a command similar to this one: 
 
-mvn install:install-file -Dfile=jfxrt.jar -DgroupId=com.oracle -DartifactId=javafx -Dpackaging=jar -Dversion=2.1.0-beta-b15 /opt/javafx-sdk/rt/lib/jfxrt.jar
+mvn install:install-file -Dfile=/opt/javafx-sdk/rt/lib/jfxrt.jar -DgroupId=com.oracle -DartifactId=javafx -Dpackaging=jar -Dversion=2.1.0-beta-b15
 
 I suggest using the exact version in general but it's particularly important here because 
 JavaFX seems, at least to me, to be changing relatively fast.
 
-The last parameter is the fully qualified name/location of the runtime jar file which is jfxrt.jar  
