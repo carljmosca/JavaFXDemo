@@ -16,6 +16,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -40,7 +41,7 @@ public class MainFXML implements Initializable {
     private void btnAddAction(ActionEvent event) {
         if (tfFirstName.getText().isEmpty() || tfLastName.getText().isEmpty()
                 || tfEmail.getText().isEmpty()) {
-            MessageDialog.show("All fields are required");
+            
         } else {
             users.add(new Person(
                     tfFirstName.getText(),
